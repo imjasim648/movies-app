@@ -1,0 +1,12 @@
+{% extends "movies/_base.html" %}
+
+{% block content %}
+    <h1>Favourite Series</h1>
+    <ol> 
+        {% for show in series %}
+            <li>{{ show }}</li>
+        {% endfor %}
+    </ol>
+    {% load static %}
+    <img style="width: 500;" src = "{% static 'movies/Rick Roll.jpg' %}" alt ="Agree"
+{% endblock %}
