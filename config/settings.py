@@ -23,9 +23,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-zj8k%2%#w687o#@e)m0yjn8!!)&l(=xzkrx)o31w981l#@zr)c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["localhost",
+                 "127.0.0.1",
+                "movies-app-xysh.onrender.com",  # your Render URL
+                ]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://movies-app-xysh.onrender.com",
+]
+
 
 
 # Application definition
